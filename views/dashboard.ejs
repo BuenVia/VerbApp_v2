@@ -1,0 +1,155 @@
+<h1>Dashboard</h1>
+<p>Welcome <%= user.name %> <%= user.id %>  </p>
+<a href="/users/logout">Logout</a>
+
+<main class="flex-col">
+    <div class="width-container">
+
+        <div class="body-container">
+            <div class="col-75" id="lessonContainer">
+
+                <!--DASHBOARD-->
+                <section>
+                    <div class="header-lg" id="header">
+                        <h1>Practice</h1>
+                    </div>
+
+                        <div class="section" id="tenseContainer">
+                            <div class="text-sm">
+                                <div class="flex-col">
+
+                                    <p class="info-text">Select the tense you want to practice</p>
+                                    
+                                    <div class="btn-group">
+                                        <div class="flex-col btn-box">
+                                            <div class="flex-col box-sm">
+                                                <div class="tense-btn" data-practice-btn="infinitive"></div>
+                                                <h4>Infinitive</h4> 
+                                            </div>
+                                        </div>
+                                        <div class="flex-row btn-container">
+                                            <div class="flex-col btn-box">
+                                                <div class="tense-btn" data-practice-btn="present"></div>
+                                                <h4>Present</h4> 
+                                            </div>
+                                            <div class="flex-col btn-box">
+                                                <div class="tense-btn" data-practice-btn="serEstar"></div>
+                                                <h4>Ser and Estar</h4>                                        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-group">
+                                        <div class="flex-row btn-container">
+                                            <div class="flex-col btn-box">
+                                                <div class="tense-btn" data-practice-btn="preterite"></div>
+                                                <h4>Preterite</h4>
+                                            </div>
+                                            <div class="flex-col btn-box">
+                                                <div class="tense-btn" data-practice-btn="imperfect"></div>
+                                                <h4>Imperfect</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flex-row btn-container">
+                                            <div class="flex-col btn-box">
+                                            <div class="tense-btn" data-practice-btn="pretImp"></div>
+                                            <h4>Preterite Vs Imperfect</h4>
+                                        </div>
+                                        </div>
+                                        <div class="flex-row btn-container">
+                                            <div class="flex-col btn-box">
+                                            <div class="tense-btn" data-practice-btn="perfect"></div>
+                                            <h4>Perfect</h4>
+                                            </div>
+                                            <div class="flex-col btn-box">
+                                            <div class="tense-btn" data-practice-btn="pluperfect"></div>
+                                            <h4>Pluperfect</h4>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-group">
+                                        <div class="flex-row btn-container">
+                                            <div class="flex-col btn-box">
+                                            <div class="tense-btn" data-practice-btn="presCont"></div>
+                                            <h4>Present Continuous</h4>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-group">
+                                        <div class="flex-row btn-container">
+                                            <div class="flex-col btn-box">
+                                            <div class="tense-btn" data-practice-btn="presCont"></div>
+                                            <h4>Immediate Future</h4>
+                                            </div>
+                                            <div class="flex-col btn-box">
+                                            <div class="tense-btn" data-practice-btn="presCont"></div>
+                                            <h4>Proper Future</h4>
+                                        </div>
+                                        </div>
+                                        <div class="flex-row btn-container">
+                                            <div class="flex-col btn-box">
+                                            <div class="tense-btn" data-practice-btn="conditional"></div>
+                                            <h4>Conditional</h4>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <!--PRACTICE CONTAINER-->
+                        <div class="section" id="practiceContainer"></div>
+
+                        <div class="flex-col" id="summaryContainer">
+                            <div class="text-sm score-container">
+                                <div id="scoreContainer"></div>
+                                <button class="btn finish-btn" id="finishBtn">Finish</button>
+                            </div>
+                            <div class="summary-box-container" id="summaryBoxContainer"></div>
+                        </div>
+
+                </section>
+
+                <div id="grammarContainer" class="grammar-container">
+                    <div class="text-sm" id="grammarBox"></div>
+                </div>
+                
+            </div> <!--END OF col-75-->
+            
+            <div class="col-25" id="sideBarContainer">
+
+                <!--SIDE COLUMN-->
+                <section>
+                    <div class="header-lg">
+                        <h1>History</h1>
+                    </div>
+
+                    <div id="scoreEl">
+                        <div class="text-sm">
+                            <h4>No tests taken</h4>
+                        </div>
+                    </div>
+                
+                </section>
+
+                <section>
+                    <div class="header-lg">
+                        <h1>Grammar</h1>
+                    </div>
+
+                    <div>
+                        <div class="flex-col wrap" id="grammarEl"></div>
+                    </div>
+                
+                </section>
+
+
+            </div> <!--END OF col-25-->
+
+        </div>
+
+</main>
